@@ -33,7 +33,7 @@ The goal is to show my progression by rebuilding the same app using different st
 
 ## 🖼️ Preview
 
-*(Add screenshots for each branch here)*  
+*(Coming soon)*  
 
 ---
 
