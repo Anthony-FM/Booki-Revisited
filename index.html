@@ -8,6 +8,11 @@
         <title>Booki - [Remake]</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="hero.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
@@ -18,8 +23,12 @@
                 </picture>
                 <nav>
                     <ul>
-                        <a href="/"><li>Hébergement</li></a>
-                        <a href="/"><li>activités</li></a>
+                        <li>
+                            <a href="#">Hébergement</a>
+                        </li>
+                        <li>
+                            <a href="#">activités</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -28,7 +37,7 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en plein nature</p>
 
-               <form action="/">
+               <form action="/" class="search-bar">
                     <i class="fa-solid fa-location-dot"></i>
                     <input type="search" name="search" id="search" placeholder="Marseille, France">
                     <button type="submit">Rechercher</button>
@@ -192,7 +201,7 @@
                     <summary>Afficher plus</summary>
                     <article class="cards"> 
                         <picture>
-                            <source media="(max-width: 768px)" srcset="images/hebergements/4_small/bedroom-5664221_1280.jpg">
+                            <source media="(max-width: 768px)" srcset="images/hebergements/4_small/bedroom-5664221_640.jpg">
                             <img 
                                 src="images/hebergements/3_medium/bedroom-5664221_1280.jpg" 
                                 alt="Hôtel Fouda-Many" >
@@ -210,7 +219,7 @@
                     </article>
                     <article class="cards"> 
                         <picture>
-                            <source media="(max-width: 768px)" srcset="images/hebergements/4_small/bedroom-416062_1280.jpg">
+                            <source media="(max-width: 768px)" srcset="images/hebergements/4_small/bedroom-416062_640.jpg">
                             <img 
                                 src="images/hebergements/3_medium/bedroom-416062_1280.jpg" 
                                 alt="Hôtel Fouda-Many luxury" >
@@ -228,7 +237,7 @@
                     </article>
                     <article class="cards"> 
                         <picture>
-                            <source media="(max-width: 768px)" srcset="images/hebergements/4_small/beds-182965_1280.jpg">
+                            <source media="(max-width: 768px)" srcset="images/hebergements/4_small/beds-182965_640.jpg">
                             <img 
                                 src="images/hebergements/3_medium/beds-182965_1280.jpg" 
                                 alt="Auberge Catholique Anthony" >
