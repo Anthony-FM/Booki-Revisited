@@ -1,0 +1,160 @@
+.accommodation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.accomodation {
+    padding: 80px;
+}
+
+.accomodation > h2, summary, .header-aside > h2, .header-aside > i {
+    font-size: var(--h1-xl);    
+    font-weight: var(--bold);
+}
+
+.accomodation > h2, .header-aside{
+    margin-bottom: 50px;
+}
+.cards-accomodation-container{
+    width: 1760px;
+    /* min-height: 890px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;  
+}
+
+.accomodation, aside {
+    background-color: var(--grey);
+    border-radius: 30px;
+}
+
+.cards {
+    width: 490px;
+    height: 400px;
+    padding: 10px 10px 25px 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 50px -10px var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.cards > picture {
+    display: block;
+    height: 228px;
+    width: 100%;
+}
+
+.cards > picture > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+    height: 120px;
+}
+
+.stars-container > i {
+    font-size: var(--text-xl);
+}
+
+.accommodation-container  h3{
+    font-size: var(--h3-xl);
+    font-weight: var(--bold);
+}
+
+.accommodation-container  p, .accommodation-container > i {
+    font-size: var(--text-xl);
+}
+
+
+.blue {
+    color: var(--primary-color);
+}
+
+.grey {
+    color: var(--grey-stars)
+}
+
+details{
+    margin-top: 90px
+}
+
+summary{ 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+summary + div{
+    margin-top: 50px;
+}
+
+aside{
+    width: 840px;
+    padding: 80px;
+}
+
+.header-aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cards-popularity-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 90%;
+    gap: 66px;
+}
+.popularity-card{
+    width: 680px;
+    height: 300px;
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 0 50px -10px var(--black);
+    gap: 30px;
+}
+
+.popularity-card > picture{
+    display: block;
+    width: 254px;
+}
+
+.popularity-card > picture > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0 0 30px;
+}
+
+.popularity-card_right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 371px;
+}
+
+.popularity-card_text-container{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 20px;
+}
