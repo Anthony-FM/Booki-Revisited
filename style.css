@@ -2,13 +2,15 @@
     --primary-color: #0065fc;
     --light-primary: #deebff;
     --grey: #f2f2f2;
+    --grey-stars: #d9d9d9;
     --black: #000000;
-    --bold: 500;
+    --bold: 600;
     --h1-xl: 44px;
     --h1-l: 36px;
     --h1-m: 18px;
     --h1-s: 14px;
-    --text-xl: 30px
+    --text-xl: 28px;
+    --h3-xl: 32px;
 }
 
 body {
@@ -43,7 +45,6 @@ li > a:hover {
 }
 
 p {
-    font-weight: 400;
     font-size: var(--text-xl);
 }
 
