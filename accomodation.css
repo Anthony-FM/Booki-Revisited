@@ -28,6 +28,10 @@
     gap: 60px;  
 }
 
+.cards-accomodation-container > a:active > .cards, .cards-popularity-container > a:active > .popularity-card {
+    box-shadow: none;
+}
+
 .accomodation, aside {
     background-color: var(--grey);
     border-radius: 30px;
@@ -43,6 +47,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
+    transition: all 150ms ease-in-out;
 }
 
 .cards > picture {
@@ -119,6 +124,7 @@ aside{
     justify-content: flex-start;
     height: 90%;
     gap: 66px;
+    margin-top: 50px;
 }
 .popularity-card{
     width: 680px;
