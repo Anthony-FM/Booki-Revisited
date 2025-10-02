@@ -98,6 +98,7 @@ nav > ul li a {
     color: white;
     font-size: var(--h1-l);
     border: none;
+    transition: all 150ms ease-in-out;
 }
 
 .search-bar > button:hover{
