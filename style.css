@@ -14,7 +14,8 @@
 }
 
 body {
-    padding: 0 5%;
+    display: flex;
+    flex-direction: column;align-items: center;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -25,6 +26,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+main, section{
+    width: 90%;
 }
 
 li {
