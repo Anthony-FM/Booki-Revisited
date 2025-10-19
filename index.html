@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Booki - [Remake] est un site de réservation d'hébergements et d'activités de loisirs. C'est également un projet Bootcamp OpenClassRooms réaliser par Anthony Fouda-Many. Il est remasterisé pour s'exercer et réviser aux compétences acquises durant la formation Javascript - React.">
         <meta name="author" content="Anthony Fouda-Many">
+
+        <!-- Balises Open Graph -->
+        <meta property="og:title" content="Booki – Trouvez votre hébergement idéal en France" />
+        <meta property="og:description" content="Découvrez les meilleurs hébergements et activités dans plus de 100 villes françaises avec Booki." />
+        <!-- photos à mettre -->
+        <meta property="og:image" content="https://ton-site.com/assets/images/booki-preview.jpg" />
+        <!-- url à mettre à jour une fois en prod -->
+        <meta property="og:url" content="https://ton-site.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
+
+        <!-- Titre -->
         <title>Booki - [Remake]</title>
+
+        <!-- url CSS -->        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="hero.css">
-        <link rel="stylesheet" href="accomodation.css">
-        <link rel="stylesheet" href="activities.css">
-
-
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
 
-        <link rel="icon" type="image/png" href="/images/logo/Booki-B.png" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/images/logo/Booki-B.png" >
 
     </head>
     <body>
@@ -26,8 +37,12 @@
             <header>
                 <a href="/" class="logo">
                     <picture >
-                        <source media="(max-width: 992px )" srcset="/images/logo/Booki.png">
-                        <img src="/images/logo/Booki@3x.png" alt="Logo du site Booki" >
+                        <source media="(max-width: 992px)" srcset="/images/logo/Booki.png">
+                        <img 
+                            src="/images/logo/Booki@3x.png" 
+                            alt="Logo du site Booki" 
+                            decoding="async"
+                        />
                     </picture>
                 </a>
                 <nav>
@@ -48,27 +63,27 @@
 
                <form action="/" class="search-bar">
                     <i class="fa-solid fa-location-dot"></i>
-                    <input type="search" name="search" id="search" placeholder="Marseille, France">
-                    <button type="submit">Rechercher</button>
+                    <input type="search" name="search" id="search" aria-label="Rechercher un ville" placeholder="Marseille, France">
+                    <button type="submit" class="bold">Rechercher</button>
                </form>
                <div class="filter">
                     <h2 class="filter_title">Filtres</h2>
                     <ul class="filter_container">
                         <li class="components">
                             <i class="fa-solid fa-money-bill-wave"></i>
-                            <h2 class="filterTitle">Economique</h2>
+                            <h3 class="filterTitle">Economique</h2>
                         </li>
                         <li class="components">
                             <i class="fa-solid fa-child-reaching"></i>
-                            <h2 class="filterTitle">Familial</h2>
+                            <h3 class="filterTitle">Familial</h2>
                         </li>
                         <li class="components">
                             <i class="fa-sharp fa-solid fa-heart"></i>
-                            <h2 class="filterTitle">Romantique</h2>
+                            <h3 class="filterTitle">Romantique</h2>
                         </li>
                         <li class="components">
                             <i class="fa-solid fa-dog"></i>
-                            <h2 class="filterTitle">Animaux</h2>
+                            <h3 class="filterTitle">Animaux</h2>
                         </li>
                     </ul>
                </div>
@@ -85,12 +100,13 @@
                     <a href="#hebergement">
                         <article class="cards"> 
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                                <source media="(max-width: 992px)" srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                                <source media="(max-width: 1180px)" srcset="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                                <source media="(max-width: 1280px)" srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                                 <img 
-                                    src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
-                                    alt="Auberge La Cannebière" >
+                                    src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                                    alt="Auberge La Cannebière" 
+                                    decoding="async"
+                                />
                             </picture>                       
                             <div class="card-text">
                                 <h3 class="card_title">Auberge La Cannebière</h3>
@@ -108,12 +124,13 @@
                     <a href="#hebergement">
                         <article class="cards"> 
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                                <source media="(max-width: 992px)" srcset="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                                <source media="(max-width: 1180px)" srcset="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                                <source media="(max-width: 1280px)" srcset="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                                 <img 
-                                    src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
-                                    alt="Hôtel du port" >
+                                    src="images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
+                                    alt="Hôtel du port" 
+                                    decoding="async"
+                                />
                             </picture>                       
                             <div class="card-text">
                                 <h3 class="card_title">Hôtel du port</h3>
@@ -131,12 +148,13 @@
                     <a href="#hebergement">
                         <article class="cards"> 
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                                <source media="(max-width: 992px)" srcset="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                                <source media="(max-width: 1180px)" srcset="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                                <source media="(max-width: 1280px)" srcset="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
                                 <img 
-                                    src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
-                                    alt="Hôtel Les mouettes" >
+                                    src="images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
+                                    alt="Hôtel Les mouettes" 
+                                    decoding="async"
+                                />
                             </picture>                       
                             <div class="card-text">
                                 <h3 class="card_title">Hôtel Les mouettes</h3>
@@ -154,12 +172,14 @@
                     <a href="#hebergement">
                         <article class="cards"> 
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <source media="(max-width: 992px)" srcset="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                                <source media="(max-width: 1180px)" srcset="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                                <source media="(max-width: 1280px)" srcset="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                                 <img 
-                                    src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
-                                    alt="Hôtel de la mer" >
+                                    src="images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
+                                    alt="Hôtel de la mer" 
+                                    decoding="async"
+                                    loading="lazy"
+                                />
                             </picture>                       
                             <div class="card-text">
                                 <h3 class="card_title">Hôtel de la mer</h3>
@@ -177,12 +197,14 @@
                     <a href="#hebergement">
                         <article class="cards"> 
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                                <source media="(max-width: 992px)" srcset="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                                <source media="(max-width: 1180px)" srcset="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                                <source media="(max-width: 1280px)" srcset="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                                 <img 
-                                    src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
-                                    alt="Auberge Le Panier" >
+                                    src="images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
+                                    alt="Auberge Le Panier" 
+                                    decoding="async"
+                                    loading="lazy"
+                                />
                             </picture>                       
                             <div class="card-text">
                                 <h3 class="card_title">Auberge Le Panier</h3>
@@ -200,12 +222,14 @@
                     <a href="#hebergement">
                         <article class="cards"> 
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                                <source media="(max-width: 992px)" srcset="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                                <source media="(max-width: 1180px)" srcset="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                                <source media="(max-width: 1280px)" srcset="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                                 <img 
-                                    src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
-                                    alt="Hôtel chez Amina" >
+                                    src="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
+                                    alt="Hôtel chez Amina" 
+                                    decoding="async"
+                                    loading="lazy"
+                                />
                             </picture>                       
                             <div class="card-text">
                                 <h3 class="card_title">Hôtel chez Amina</h3>
@@ -228,10 +252,13 @@
                         <a href="#hebergement">
                             <article class="cards"> 
                                 <picture>
-                                    <source media="(max-width: 768px)" srcset="images/hebergements/4_small/bedroom-5664221_640.jpg">
+                                    <source media="(max-width: 991px)" srcset="images/hebergements/4_small/bedroom-5664221_640.jpg">
                                     <img 
                                         src="images/hebergements/3_medium/bedroom-5664221_1280.jpg" 
-                                        alt="Hôtel Fouda-Many" >
+                                        alt="Hôtel Fouda-Many" 
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
                                 </picture>                       
                                 <div class="card-text">
                                     <h3 class="card_title">Hôtel Fouda-Many</h3>
@@ -249,10 +276,13 @@
                         <a href="#hebergement">
                             <article class="cards"> 
                                 <picture>
-                                    <source media="(max-width: 768px)" srcset="images/hebergements/4_small/bedroom-416062_640.jpg">
+                                    <source media="(max-width: 991px)" srcset="images/hebergements/4_small/bedroom-416062_640.jpg">
                                     <img 
                                         src="images/hebergements/3_medium/bedroom-416062_1280.jpg" 
-                                        alt="Hôtel Fouda-Many luxury" >
+                                        alt="Hôtel Fouda-Many luxury" 
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
                                 </picture>                       
                                 <div class="card-text">
                                     <h3 class="card_title">Hôtel Fouda-Many luxury</h3>
@@ -270,10 +300,13 @@
                         <a href="#hebergement">
                             <article class="cards"> 
                                 <picture>
-                                    <source media="(max-width: 768px)" srcset="images/hebergements/4_small/beds-182965_640.jpg">
+                                    <source media="(max-width: 991px)" srcset="images/hebergements/4_small/beds-182965_640.jpg">
                                     <img 
                                         src="images/hebergements/3_medium/beds-182965_1280.jpg" 
-                                        alt="Auberge Catholique Anthony" >
+                                        alt="Auberge Catholique Anthony" 
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
                                 </picture>                       
                                 <div class="card-text">
                                     <h3 class="card_title">Auberge Catholique Anthony</h3>
@@ -301,8 +334,12 @@
                     <article>
                         <a href="#popularity" class="popularity-card">
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                                <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le Soleil du matin">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                                <img 
+                                    src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
+                                    alt="Hôtel Le Soleil du matin"
+                                    decoding="async"
+                                />
                             </picture>
                             <div class="popularity-card_right-side">
                                 <div class="popularity-card_text-container">                            
@@ -323,8 +360,12 @@
                     <article>
                         <a href="#popularity" class="popularity-card">
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                                <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambre d'hôtes">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                                <img 
+                                    src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" 
+                                    alt="Au coeur de l'eau Chambre d'hôtes"
+                                    decoding="async"
+                                />
                             </picture>
                             <div class="popularity-card_right-side">
                                 <div class="popularity-card_text-container">
@@ -345,8 +386,13 @@
                     <article>
                         <a href="#popularity" class="popularity-card">
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                                <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc">
+                                <source media="(max-width: 991px)" srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                                <img 
+                                    src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+                                    alt="Hôtel Tout bleu et Blanc"
+                                    decoding="async"
+                                    loading="lazy"
+                                />
                             </picture>
                             <div class="popularity-card_right-side">
                                 <div class="popularity-card_text-container">
@@ -373,8 +419,13 @@
                     <article >
                         <a href="#activites" class="xl">
                             <picture>
-                                <source media="(max-width: 768px )" srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                                <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port">
+                                <source media="(min-width: 768px )" srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                                <img 
+                                    src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+                                    alt="Vieux port"
+                                    decoding="async"
+                                    loading="lazy"
+                                />
                             </picture>
                             <h3>Vieux Port</h3>
                         </a>                  
@@ -383,8 +434,13 @@
                         <article >
                             <a href="#activites" class="medium">
                                 <picture>
-                                    <source media="(max-width: 768px )" srcset="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                                    <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                                    <source media="(min-width: 768px )" srcset="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                                    <img 
+                                        src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
+                                        alt="Fort de Pomègues"
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
                                 </picture>
                                 <h3>Fort de Pomègues</h3>
                             </a> 
@@ -392,8 +448,13 @@
                         <article >
                             <a href="#activites" class="small">
                                 <picture>
-                                    <source media="(max-width: 768px)" srcset="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                                    <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                                    <source media="(max-width: 991px)" srcset="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                                    <img 
+                                        src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
+                                        alt="Îles du Frioul"
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
                                 </picture>
                                 <h3>Îles du Frioul</h3>
                             </a> 
@@ -403,8 +464,13 @@
                     <article >
                         <a href="#activites" class="xl">
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                                <source media="(max-width: 991px)" srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                                <img 
+                                    src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
+                                    alt="Parc National des Calanques"
+                                    decoding="async"
+                                    loading="lazy"
+                                />
                             </picture>
                             <h3>Parc National des Calanques</h3>
                         </a> 
@@ -413,8 +479,13 @@
                         <article>
                             <a href="#activites" class="small">
                                 <picture>
-                                    <source media="(max-width: 768px )" srcset="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                                    <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                                    <source media="(min-width: 768px )" srcset="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                                    <img 
+                                        src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
+                                        alt="Notre-Dame-de-la-Garde"
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
                                 </picture>
                                 <h3>Notre-Dame-de-la-Garde</h3>                               
                             </a> 
@@ -422,8 +493,13 @@
                         <article >
                             <a href="#activites" class="medium">
                                 <picture>
-                                    <source media="(max-width: 768px)" srcset="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                                    <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                                    <source media="(max-width: 991px)" srcset="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                                    <img 
+                                        src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
+                                        alt="Parc Longchamp"
+                                        decoding="async"
+                                        loading="lazy"
+                                    />
                                 </picture>
                                 <h3>Parc Longchamp</h3>
                             </a> 
@@ -434,7 +510,7 @@
         </section>
         <footer>
             <section class="links">
-                <h3>A propos</h3>
+                <h3 class="bold">A propos</h3>
                 <ul>
                     <li><a href="#">Fonctionnement du site</a></li>
                     <li><a href="#">Conditions générales de vente</a></li>
@@ -442,14 +518,14 @@
                 </ul>
             </section>
             <section class="links">
-                <h3>Nos hébergements</h3>
+                <h3 class="bold">Nos hébergements</h3>
                 <ul>
                     <li><a href="#">Charte qualité</a></li>
                     <li><a href="#">Soumettre votre hôtel</a></li>
                 </ul>
             </section>
             <section class="links">
-                <h3>Assistance</h3>
+                <h3 class="bold">Assistance</h3>
                 <ul>
                     <li><a href="#">Centre d'aide</a></li>
                     <li><a href="#">Nous contacter</a></li>
