@@ -1,0 +1,9 @@
+@layer reset, base, components;
+
+@import './reset/reset.css' layer(reset);
+@import './base/style.css' layer(base);
+
+@import './components/hero.css' layer(components);
+@import './components/accomodation.css' layer(components);
+@import './components/activities.css' layer(components);
+@import './components/footer.css' layer(components);
