@@ -1,0 +1,108 @@
+@layer base{
+    :root {
+        --primary-color: #0065fc;
+        --light-primary: #deebff;
+        --grey: #f2f2f2;
+        --grey-stars: #d9d9d9;
+        --black: #000000;
+        --bold: 600;
+        --h1-xl: 44px;
+        --h1-l: 24px;
+        --h1-m: 18px;
+        --h1-s: 14px;
+        --h2-xl: 36px;
+        --h2-l: 20px;
+        --h3-xl: 36px;
+        --h3-l: 18px;
+        --text-xl: 32px;
+        --text-l: 14px;
+        --desktop-ratio-xl: 2;
+        --desktop-ratio: 2.25;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;align-items: center;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: var(--bold);
+
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main, section{
+        width: 95%;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: var(--black);
+        text-decoration: none;
+    }
+
+    li > a:hover {
+        color: var(--primary-color)
+    }
+
+    .bold {
+        font-weight: var(--bold);
+    }
+
+    p {
+        font-size: var(--text-xl);
+    }
+
+    h1{
+        font-size: var(--h1-xl);
+    }
+
+    h2{
+        font-size: var(--h2-xl);
+    }
+    h3{
+        font-size: var(--h3-xl);
+    }
+    
+    @media screen and (max-width: 1537px){
+        p {
+            font-size: var(--text-l);
+        }
+    
+        h1{
+            font-size: var(--h1-l);
+        }
+    
+        h2{
+            font-size: var(--h2-l);
+        }
+        h3{
+            font-size: var(--h3-l);
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+        p {
+            font-size: calc(var(--text-xl) / var(--desktop-ratio));
+        }
+
+        h1{
+            font-size: calc(var(--h1-xl) / var(--desktop-ratio));
+        }
+
+        h2{
+            font-size: calc(var(--h2-xl) / var(--desktop-ratio));
+        }
+        h3{
+            font-size: calc(var(--h3-xl) / var(--desktop-ratio));
+        }
+    }
+}
