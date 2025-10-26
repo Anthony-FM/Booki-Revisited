@@ -16,7 +16,7 @@ footer ul {
     margin-top: 50px;
 }
 
-footer li {
+footer h3 {
     font-size: var(--h3-xl);
 }
 
@@ -40,7 +40,7 @@ footer li {
         margin-top: calc(50px / var(--desktop-ratio-xl));
     }
 
-    footer li {
+    footer h3 {
         font-size: calc(var(--h3-xl) / var(--desktop-ratio-xl));
     }
     .links a{
@@ -59,10 +59,68 @@ footer li {
         margin-top: calc(50px / var(--desktop-ratio));
     }
 
-    footer li {
+    footer h3 {
         font-size: calc(var(--h3-xl) / var(--desktop-ratio));
     }
     .links a{
         font-size: calc(var(--text-xl) / var(--desktop-ratio));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        width: 100%;
+        height: inherit;
+        background-color: var(--grey);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 5%;
+        margin-top: 50px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 40px;
+        margin-top: 50px;
+        margin-bottom: 95px;
+    }
+
+    footer h3 {
+        font-size: var(--h3-xl);
+    }
+
+    .links{
+        flex: 1 1 33%;
+    }
+
+    .links a{
+        font-size: var(--text-xl);
+    }
+}
+@media screen and (max-width: 650px) {
+    footer{
+        padding: calc(50px / var(--desktop-ratio-xl)) 5%;
+        margin-top: calc(50px / var(--desktop-ratio-xl));
+    }
+
+    footer ul {
+        gap: calc(40px / var(--desktop-ratio-xl));
+        margin-top: calc(50px / var(--desktop-ratio-xl));
+        margin-bottom: calc(95px / var(--desktop-ratio-xl));
+    }
+
+    footer h3 {
+        font-size: calc(var(--h3-xl) / var(--desktop-ratio-xl));
+    }
+
+    .links{
+        flex: 1 1 33%;
+    }
+
+    .links a{
+        font-size: calc(var(--text-xl) / var(--desktop-ratio-xl));
     }
 }

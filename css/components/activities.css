@@ -3,6 +3,9 @@
     flex-direction: column;
     justify-content: content;
     margin-top: 125px;
+
+    scroll-snap-align: start;
+    scroll-margin-top: 80px;
 }
 
 .activity_title{
@@ -33,7 +36,7 @@
 }
 .xl > h3, .medium > h3, .small > h3{
     font-size: var(--h3-xl);
-    font-weight: 600;
+    font-weight: var(--bold);
     margin: 0 0 40px 40px;
 }
 
@@ -99,7 +102,7 @@
 
     .xl > h3, .medium > h3, .small > h3{
         font-size: calc(var(--h3-xl) / var(--desktop-ratio-xl));
-        font-weight: 600;
+        font-weight: var(--bold);
         margin: 0 0 calc(40px / var(--desktop-ratio-xl)) calc(40px / var(--desktop-ratio-xl));
     }
     
@@ -157,7 +160,7 @@
 
     .xl > h3, .medium > h3, .small > h3{
         font-size: calc(var(--h3-xl) / var(--desktop-ratio));
-        font-weight: 600;
+        font-weight: var(--bold);
         margin: 0 0 calc(40px / var(--desktop-ratio)) calc(40px / var(--desktop-ratio));
     }
     
@@ -193,4 +196,95 @@
         height: calc(218px / var(--desktop-ratio));
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .activities{
+        padding: 5%;
+    }
+
+    .activity_title{
+        font-size: var(--h2-xl);
+        font-weight: var(--bold);
+        margin-bottom: 60px;
+    }
+
+    .activities_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:50px;
+        width: 100%;
+
+        scroll-snap-type: x proximity;
+        scroll-behavior: smooth;
+    }
+
+    .xl, .medium, .small{
+        width: 100%;
+        height: 380px;
+        border-radius: 30px;
+
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+    .xl > picture, .medium > picture, .small > picture{
+        height: 270px;
+    }
+
+    .xl:active, .medium:active, .small:active{   
+        box-shadow:none;
+    }
+    .xl > h3, .medium > h3, .small > h3{
+        font-size: var(--h3-xl);
+        font-weight: var(--bold);
+        margin: 0 0 40px 40px;
+    }
+
+    .xl > picture > img, .medium > picture > img, .small > picture > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px 30px 0 0;
+        aspect-ratio: 4 / 3;
+    }
+    .two-blocks{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: inherit;
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 650px) {
+
+    .activity_title{
+        font-size: calc(var(--h2-xl) / var(--desktop-ratio-xl));
+        margin-bottom: calc(60px / var(--desktop-ratio-xl));
+    }
+
+    .activities_container{
+        gap: calc(50px / var(--desktop-ratio-xl));
+    }
+
+    .xl, .medium, .small{
+        height: calc(380px / var(--desktop-ratio-xl));
+        border-radius: calc(30px / var(--desktop-ratio-xl));
+    }
+    .xl > picture, .medium > picture, .small > picture{
+        height: calc(270px / var(--desktop-ratio-xl));
+    }
+    }
+    .xl > h3, .medium > h3, .small > h3{
+        font-size: calc(var(--h3-xl) / var(--desktop-ratio-xl));
+        margin: 0 0 calc(40px / var(--desktop-ratio-xl)) calc(40px / var(--desktop-ratio-xl));
+    }
+
+    .xl > picture > img, .medium > picture > img, .small > picture > img{
+        border-radius: calc(30px / var(--desktop-ratio-xl)) calc(30px / var(--desktop-ratio-xl)) 0 0;
+        aspect-ratio: 4 / 3;
+    }
+    .two-blocks{
+        gap: calc(50px / var(--desktop-ratio-xl));
+    }
 }
